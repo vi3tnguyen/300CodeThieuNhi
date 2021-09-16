@@ -1,3 +1,5 @@
+package Week_1;
+
 public class Exercise_Week_1 {
 
     // Cộng 2 số trong Java
