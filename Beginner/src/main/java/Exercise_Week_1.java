@@ -25,7 +25,7 @@ public class Exercise_Week_1 {
 
         System.out.println("Nhân 2 số trong java " + d);
 
-        System.out.println("");
+        System.out.println("================");
         
     }
 
