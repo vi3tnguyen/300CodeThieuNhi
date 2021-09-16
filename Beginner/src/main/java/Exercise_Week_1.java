@@ -24,8 +24,13 @@ public class Exercise_Week_1 {
 
 
         System.out.println("Nhân 2 số trong java " + d);
+
+        System.out.println("");
+        
     }
 
+
+    // Check commit code with some field change
 
 
     public static void main(String[] args) {
