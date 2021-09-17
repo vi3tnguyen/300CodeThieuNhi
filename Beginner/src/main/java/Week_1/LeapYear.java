@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class LeapYear {
      int year;
+     
+     int llala;
 
      int hihi;
 
