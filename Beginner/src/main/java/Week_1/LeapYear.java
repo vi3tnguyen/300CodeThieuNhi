@@ -5,6 +5,8 @@ import java.util.Date;
 public class LeapYear {
      int year;
 
+     int hihi;
+
     /*LeapYear(int year){
         this.year = year;*/
 public void Update(String year) {
