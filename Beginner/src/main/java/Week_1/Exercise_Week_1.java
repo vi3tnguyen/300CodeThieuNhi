@@ -24,7 +24,7 @@ public class Exercise_Week_1 {
 
 
     void checkGiaTri(){
-        if(this.a %2 == 0){
+        if(this.a  %2 == 0){
             System.out.println("Giá trị chẳn " + this.a);
         }else{
             System.out.println("Giá trị lẻ " + this.a);

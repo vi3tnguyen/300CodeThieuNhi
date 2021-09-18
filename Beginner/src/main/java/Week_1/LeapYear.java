@@ -58,7 +58,8 @@ public void checkLeapYear(){
 
         LeapYear yrr = new LeapYear();
         yrr.Update(yr);
-        yrr.Updatee(1000);
+        yrr.Updatee(196);
+        yrr.checkLeapYear();
         System.out.println(yrr.year);
 
 
