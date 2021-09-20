@@ -1,33 +1,42 @@
 package Week_1;
 
+import java.util.Scanner;
+
 public class Exercise_Week_1 {
 
     // Cộng 2 số trong Java
     // Check 2 số chẵn lẽ
-    int a;
-    int b;
 
-    Exercise_Week_1(int a, int b){
+    public int a;
+    public int b;
+    public int e = 10;
+
+
+
+
+    public Exercise_Week_1(int a, int b){
         this.a = a;
         this.b = b;
     }
 
     int nhan(){
-         int e = this.a * this.b;
-        return e;
+        return this.a * this.b;
+
     }
 
     int Sum(){
-        int c = this.a + this.b;
-        return c;
+        return this.a + this.b;
+
     }
 
 
-    void checkGiaTri(){
-        if(this.a  %2 == 0){
-            System.out.println("Giá trị chẳn " + this.a);
+    void checkGiaTri(int a){
+
+
+        if(a  %2 == 0){
+            System.out.println("Giá trị chẳn " + a);
         }else{
-            System.out.println("Giá trị lẻ " + this.a);
+            System.out.println("Giá trị lẻ " + a);
         }
     }
     // Check commit code with some field change
@@ -37,7 +46,10 @@ public class Exercise_Week_1 {
         Exercise_Week_1 ex = new Exercise_Week_1(2,4);
         int d = ex.nhan();
         int g = ex.Sum();
-        ex.checkGiaTri();
+        Scanner scanner = new Scanner(System.in);
+        int chanle = scanner.nextInt();
+
+        ex.checkGiaTri(chanle);
         System.out.println("Nhân " + d);
         System.out.println("Sum of value C: " + g);
 
