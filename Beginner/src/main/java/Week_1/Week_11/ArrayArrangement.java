@@ -37,7 +37,7 @@ public class ArrayArrangement {
      */
     public static void sortASC(int [] arr) {
         int temp = arr[0];
-        for (int i = 0 ; i < arr.length; i++) {
+        for (int i = 0 ; i < arr.length; i++) { // [ 1 , 3 , 2 , 5 ]
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] > arr[j]) {  //[4>2] [1][2]
                     temp = arr[j]; // temp = 2

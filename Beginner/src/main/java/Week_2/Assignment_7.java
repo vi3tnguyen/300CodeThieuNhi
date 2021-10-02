@@ -20,6 +20,7 @@ public class Assignment_7 {
         char character = scanner.next().charAt(0);
         scanner.close();
 
+
         System.out.println("Value Lower Case To Upper Case : " + value.toLowerCase());
         System.out.println("Switch char --> string :" + Character.toString(character));
 

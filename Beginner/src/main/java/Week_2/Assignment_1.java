@@ -11,7 +11,8 @@ public class Assignment_1 {
         System.out.println("Input value need to check: ");
         char value = scanner.next().charAt(0);
         scanner.close();
-        char[] alphabet = new char[]{'u', 'e', 'o', 'a', 'i', 'U', 'E', 'O', 'A', 'I'};
+        char[] alphabet = new char[] {'u', 'e', 'o', 'a', 'i', 'U', 'E', 'O', 'A', 'I'};
+
 
 
         if ((value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z')) {
