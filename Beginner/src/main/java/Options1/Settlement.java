@@ -37,7 +37,7 @@ public class Settlement {
         String fileName = "SAOKE_T8.csv";
         //String fileName2 = "/Users/lap12319/Desktop/SAOKE_T9.csv";
 
-        String[] path = new String[]{fileName1,fileName};
+        String[] path = new String[]{fileName1, fileName};
         int separate1 = 0;
         boolean isSeparate = false;
 

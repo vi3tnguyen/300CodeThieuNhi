@@ -7,9 +7,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+
+
 
 public class Execerise {
 
@@ -22,9 +23,19 @@ public class Execerise {
 
         String[] path = new String[]{fileName, fileName1};
 
+        CSVWriter writer = new CSVWriter(new FileWriter("test.csv"));
+
         for (String s : path) {
             //Key,Value --
             HashMap<String, Cash> groupCash = new HashMap<>();
+//            HashMap<String,Integer> group = new HashMap();
+//            HashMap<String,Integer> group1 = new HashMap();
+//            HashMap<String,Integer> index = new HashMap<>();
+//            int [] cashIn = new int[];
+//            int [] cashOut = new int[];
+
+            //HashMap<String,HashMap<String,Integer>> indexx = new HashMap<>();
+
             // HashMap<String, Integer> groupCashOut = new HashMap<String, Integer>();
 
 
@@ -71,15 +82,26 @@ public class Execerise {
 //                }
 
 
+//                    List<List<String>> listtt = new ArrayList<>();
+//                    listtt.get(0).get(1);
+//                    listtt.get(0).add("dasdad")
+//                    List<String> arrList = listtt.get(0);
+                    ///dasdsa
+                    //dasdsd
+                    //dasdsad
+
+                    //Ba { con,con1 {con con con } }
+
+
                 }
 
-                CSVWriter writer = new CSVWriter(new FileWriter("test.csv"));
+
                 for (String key : groupCash.keySet()) {
                     Cash cash = groupCash.get(key);
                     String[] arrString = new String[]{String.valueOf(cash.getIn()), String.valueOf(cash.getOut()), key};
                     writer.writeNext(arrString);
                 }
-                writer.close();
+
 //            for (String key : groupCashIn.keySet()) {
 //                groupCashIn.get(key);
 //                groupCashOut.get(key);
@@ -93,6 +115,7 @@ public class Execerise {
 
             }
         }
+        writer.close();
     }
 
 }
