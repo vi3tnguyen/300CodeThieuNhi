@@ -10,12 +10,15 @@ public class LeapYear_New {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input year wants to check: ");
         this.year = scanner.nextInt();
-        int option = this.year % 4 + year % 400 + year % 100;
+        int option =  ( this.year % 4 == 0 && this.year % 100 != 0 || this.year % 400 == 0 ) ? 1 : 0;
 
-//        switch (option){
-//            case (year % 400):
-//                System.out.println(this.year + " - is Leap Year");
-//        }
+        switch (option){
+            case 1:
+                System.out.println(this.year + " - is Leap Year");
+                break;
+            default:
+                System.out.println(this.year + " - is not Leap Year ");
+        }
 
 
 //        if(this.year % 400 == 0){
